@@ -86,3 +86,4 @@ C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\S
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.sourcelink.json
