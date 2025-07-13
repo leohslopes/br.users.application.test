@@ -1,0 +1,13 @@
+[
+  {
+    "ContainingType": "br.users.application.test.Controllers.UserController",
+    "Method": "GetItemsUserList",
+    "RelativePath": "User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetItemsUserList"
+  }
+]

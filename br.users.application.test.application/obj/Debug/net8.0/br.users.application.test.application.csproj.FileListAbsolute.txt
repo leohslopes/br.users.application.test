@@ -1,0 +1,15 @@
+C:\DEV\br.users.application.test\br.users.application.test.application\bin\Debug\net8.0\br.users.application.test.application.deps.json
+C:\DEV\br.users.application.test\br.users.application.test.application\bin\Debug\net8.0\br.users.application.test.application.dll
+C:\DEV\br.users.application.test\br.users.application.test.application\bin\Debug\net8.0\br.users.application.test.application.pdb
+C:\DEV\br.users.application.test\br.users.application.test.application\bin\Debug\net8.0\br.users.application.test.domain.dll
+C:\DEV\br.users.application.test\br.users.application.test.application\bin\Debug\net8.0\br.users.application.test.domain.pdb
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.csproj.AssemblyReference.cache
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.AssemblyInfoInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.AssemblyInfo.cs
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.csproj.CoreCompileInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.10BE4A17.Up2Date
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.dll
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\refint\br.users.application.test.application.dll
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\br.users.application.test.application.pdb
+C:\DEV\br.users.application.test\br.users.application.test.application\obj\Debug\net8.0\ref\br.users.application.test.application.dll

@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DEV\\br.users.application.test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9667AF42-0C59-4F80-AF87-39D142894B4E}|br.users.application.test.unitTests\\br.users.application.test.unitTests.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9667AF42-0C59-4F80-AF87-39D142894B4E}|br.users.application.test.unitTests\\br.users.application.test.unitTests.csproj|solutionrelative:br.users.application.test.unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1689CD3E-4DE3-4F09-B8BC-F54FCC89A431}|br.users.application.test.crossCutting\\br.users.application.test.crossCutting.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.crosscutting\\ioc\\dependecyinjectionbootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1689CD3E-4DE3-4F09-B8BC-F54FCC89A431}|br.users.application.test.crossCutting\\br.users.application.test.crossCutting.csproj|solutionrelative:br.users.application.test.crosscutting\\ioc\\dependecyinjectionbootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|solutionrelative:br.users.application.test.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.unitTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.unitTests\\UnitTest1.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.unitTests\\UnitTest1.cs",
+              "RelativeToolTip": "br.users.application.test.unitTests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:29:23.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.application\\Services\\UserService.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.application\\Services\\UserService.cs",
+              "RelativeToolTip": "br.users.application.test.application\\Services\\UserService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADYAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T03:10:03.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependecyInjectionBootStrapper.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
+              "RelativeToolTip": "br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T23:13:41.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Program.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.v0\\Program.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Program.cs",
+              "RelativeToolTip": "br.users.application.test.v0\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T23:04:52.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\UserController.cs",
+              "RelativeToolTip": "br.users.application.test.v0\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T22:56:47.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "br.users.application.test.v0\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAQwEkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T22:56:45.702Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
