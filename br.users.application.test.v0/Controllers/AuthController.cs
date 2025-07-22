@@ -80,6 +80,7 @@ namespace br.users.application.test.v0.Controllers
                         Success = resultAsync
                     });
                 }
+
                 return Ok(new StatusCode200TypedResponseModel<bool>()
                 {
                     Success = resultAsync

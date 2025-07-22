@@ -1,7 +1,9 @@
 ﻿using br.users.application.test.application.Services;
 using br.users.application.test.domain.Entities.UserCx;
+using br.users.application.test.domain.Interfaces.Messaging;
 using br.users.application.test.domain.Interfaces.Repositories;
 using br.users.application.test.domain.Interfaces.Services;
+using br.users.application.test.messasing;
 using br.users.application.test.repository.Databases;
 using br.users.application.test.repository.Databases.Interfaces;
 using br.users.application.test.repository.Repositories;
@@ -19,6 +21,7 @@ namespace br.users.application.test.crossCutting.IoC
             RegisterDatabase(services);
             RegisterRepositories(services);
             RegisterServices(services);
+            RegisterMessages(services);
         }
 
         private static void RegisterDatabase(IServiceCollection services)
@@ -36,6 +39,12 @@ namespace br.users.application.test.crossCutting.IoC
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IPasswordHasher<Users>, PasswordHasher<Users>>();
         }
+
+        private static void RegisterMessages(IServiceCollection services) 
+        {
+            services.AddScoped<IMessageBusService, MessageBusService>();
+        }
+        
 
     }
 }

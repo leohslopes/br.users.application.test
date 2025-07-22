@@ -59,6 +59,7 @@ C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\n
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\NuGet.Frameworks.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -151,12 +152,14 @@ C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\n
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.application.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.crossCutting.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.domain.dll
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.messasing.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.repository.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.v0.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.domain.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.v0.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.application.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.crossCutting.pdb
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.messasing.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.repository.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.AssemblyReference.cache
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.GeneratedMSBuildEditorConfig.editorconfig

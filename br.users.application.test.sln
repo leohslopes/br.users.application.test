@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.users.application.test.v
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.users.application.test.unitTests", "br.users.application.test.unitTests\br.users.application.test.unitTests.csproj", "{9667AF42-0C59-4F80-AF87-39D142894B4E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.3 - Messasing", "3.3 - Messasing", "{CCA55FEF-4CCA-4025-A9FD-FDC7D1461DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.users.application.test.messasing", "br.users.application.test.messasing\br.users.application.test.messasing.csproj", "{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{9667AF42-0C59-4F80-AF87-39D142894B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9667AF42-0C59-4F80-AF87-39D142894B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9667AF42-0C59-4F80-AF87-39D142894B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +80,8 @@ Global
 		{D0993AB9-B5F3-4038-82A7-065F5443DC4F} = {61EF0BD8-1F78-42C9-80B6-32854FDAF3D1}
 		{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{9667AF42-0C59-4F80-AF87-39D142894B4E} = {1B3D0A9F-B4A9-4422-859B-24091A7D0730}
+		{CCA55FEF-4CCA-4025-A9FD-FDC7D1461DB5} = {A5417E21-288B-4A89-A730-BD0540EDB0E8}
+		{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7} = {CCA55FEF-4CCA-4025-A9FD-FDC7D1461DB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB7DE153-0E84-4D3B-B18F-3B3706519027}

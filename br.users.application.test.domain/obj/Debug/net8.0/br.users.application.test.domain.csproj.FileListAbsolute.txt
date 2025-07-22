@@ -6,6 +6,7 @@ C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8
 C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\br.users.application.test.domain.AssemblyInfoInputs.cache
 C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\br.users.application.test.domain.AssemblyInfo.cs
 C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\br.users.application.test.domain.csproj.CoreCompileInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\br.users.application.test.domain.sourcelink.json
 C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\br.users.application.test.domain.dll
 C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\refint\br.users.application.test.domain.dll
 C:\DEV\br.users.application.test\br.users.application.test.domain\obj\Debug\net8.0\br.users.application.test.domain.pdb

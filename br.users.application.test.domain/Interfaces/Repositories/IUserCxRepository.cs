@@ -12,5 +12,9 @@ namespace br.users.application.test.domain.Interfaces.Repositories
         Task<IEnumerable<Users>> GetAllUsers();
 
         Task InsertUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
+
+        Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
+
+        Task DeleteUserData(int userID);
     }
 }

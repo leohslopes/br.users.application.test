@@ -84,7 +84,7 @@ builder.Configuration.GetSection(nameof(AppSettings)).Bind(appSetting);
 builder.Services.AddSingleton(appSetting);
 
 builder.Services.RegisterAllClasses(builder.Configuration);
-
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 
 

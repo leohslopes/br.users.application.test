@@ -53,6 +53,63 @@
   },
   {
     "ContainingType": "br.users.application.test.v0.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/User/{userID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "requestModel",
+        "Type": "br.users.application.test.v0.Models.Requests.UpdateUserDataRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "br.users.application.test.v0.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "api/User/{userID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "br.users.application.test.v0.Controllers.UserController",
     "Method": "GetAll",
     "RelativePath": "api/User/GetAll",
     "HttpMethod": "GET",

@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\DEV\\br.users.application.test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9667AF42-0C59-4F80-AF87-39D142894B4E}|br.users.application.test.unitTests\\br.users.application.test.unitTests.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.unittests\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9667AF42-0C59-4F80-AF87-39D142894B4E}|br.users.application.test.unitTests\\br.users.application.test.unitTests.csproj|solutionrelative:br.users.application.test.unittests\\authcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|solutionrelative:br.users.application.test.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F4F48BA-AB23-461D-8413-24CBCF0B0A59}|br.users.application.test.repository\\br.users.application.test.repository.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.repository\\repositories\\usercxrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F4F48BA-AB23-461D-8413-24CBCF0B0A59}|br.users.application.test.repository\\br.users.application.test.repository.csproj|solutionrelative:br.users.application.test.repository\\repositories\\usercxrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1689CD3E-4DE3-4F09-B8BC-F54FCC89A431}|br.users.application.test.crossCutting\\br.users.application.test.crossCutting.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.crosscutting\\ioc\\dependecyinjectionbootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1689CD3E-4DE3-4F09-B8BC-F54FCC89A431}|br.users.application.test.crossCutting\\br.users.application.test.crossCutting.csproj|solutionrelative:br.users.application.test.crosscutting\\ioc\\dependecyinjectionbootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|solutionrelative:br.users.application.test.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +34,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserCxRepository.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.repository\\Repositories\\UserCxRepository.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.repository\\Repositories\\UserCxRepository.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.repository\\Repositories\\UserCxRepository.cs",
+              "RelativeToolTip": "br.users.application.test.repository\\Repositories\\UserCxRepository.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwG8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T14:25:03.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\UserController.cs",
+              "RelativeToolTip": "br.users.application.test.v0\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwFcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T23:01:01.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\AuthController.cs",
               "RelativeToolTip": "br.users.application.test.v0\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCUAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvywAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T17:31:24.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\appsettings.json",
-              "RelativeDocumentMoniker": "br.users.application.test.v0\\appsettings.json",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\appsettings.json",
-              "RelativeToolTip": "br.users.application.test.v0\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-13T17:11:05.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthControllerTests.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.unitTests\\AuthControllerTests.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.unitTests\\AuthControllerTests.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.unitTests\\AuthControllerTests.cs",
-              "RelativeToolTip": "br.users.application.test.unitTests\\AuthControllerTests.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:29:23.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "br.users.application.test.application\\Services\\UserService.cs",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.application\\Services\\UserService.cs",
               "RelativeToolTip": "br.users.application.test.application\\Services\\UserService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAIBJwDYAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAcwKgAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T03:10:03.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DependecyInjectionBootStrapper.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
-              "RelativeToolTip": "br.users.application.test.crossCutting\\IoC\\DependecyInjectionBootStrapper.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T23:13:41.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Program.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.v0\\Program.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Program.cs",
-              "RelativeToolTip": "br.users.application.test.v0\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T23:04:52.265Z",
               "EditorCaption": ""
             }
           ]

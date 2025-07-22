@@ -8,6 +8,7 @@ C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\
 C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\br.users.application.test.repository.AssemblyInfoInputs.cache
 C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\br.users.application.test.repository.AssemblyInfo.cs
 C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\br.users.application.test.repository.csproj.CoreCompileInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\br.users.application.test.repository.sourcelink.json
 C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\br.users.5123C18E.Up2Date
 C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\br.users.application.test.repository.dll
 C:\DEV\br.users.application.test\br.users.application.test.repository\obj\Debug\net8.0\refint\br.users.application.test.repository.dll

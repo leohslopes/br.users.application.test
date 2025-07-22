@@ -14,5 +14,9 @@ namespace br.users.application.test.domain.Interfaces.Services
         Task<bool> SaveNewResgisterUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
 
         Task<Users> GetUserByEmail(string email);
+
+        Task<bool> UpdateUserRowData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
+
+        Task<bool> DeleteUserRowData(int userID);
     }
 }

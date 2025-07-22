@@ -1,0 +1,16 @@
+C:\DEV\br.users.application.test\br.users.application.test.messasing\bin\Debug\net8.0\br.users.application.test.messasing.deps.json
+C:\DEV\br.users.application.test\br.users.application.test.messasing\bin\Debug\net8.0\br.users.application.test.messasing.dll
+C:\DEV\br.users.application.test\br.users.application.test.messasing\bin\Debug\net8.0\br.users.application.test.messasing.pdb
+C:\DEV\br.users.application.test\br.users.application.test.messasing\bin\Debug\net8.0\br.users.application.test.domain.dll
+C:\DEV\br.users.application.test\br.users.application.test.messasing\bin\Debug\net8.0\br.users.application.test.domain.pdb
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.csproj.AssemblyReference.cache
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.AssemblyInfoInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.AssemblyInfo.cs
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.csproj.CoreCompileInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.sourcelink.json
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.483D54CC.Up2Date
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.dll
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\refint\br.users.application.test.messasing.dll
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\br.users.application.test.messasing.pdb
+C:\DEV\br.users.application.test\br.users.application.test.messasing\obj\Debug\net8.0\ref\br.users.application.test.messasing.dll

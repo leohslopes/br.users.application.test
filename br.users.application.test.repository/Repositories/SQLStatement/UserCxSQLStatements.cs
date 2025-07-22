@@ -27,5 +27,15 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                        "@P_AGE_USER, " +
                                                        "@P_GENDER_USER, " +
                                                        "@P_PASSWORD_USER)";
+
+        public static readonly string UpdateUserData = @"UPDATE users_cx SET "+
+                                                       "name_user = @P_NAME_USER, " +
+                                                       "email_user = @P_EMAIL_USER, " +
+                                                       "age_user = @P_AGE_USER, " +
+                                                       "gender_user = @P_GENDER_USER, " +
+                                                       "password_user = @P_PASSWORD_USER " +
+                                                       "WHERE id_user = @P_USER_ID";
+
+        public static readonly string DeleteUserData = "DELETE FROM users_cx WHERE id_user = @P_USER_ID";
     }
 }
