@@ -49,11 +49,16 @@ namespace br.users.application.test.v0.Controllers
 
         [HttpPut("{userID}"), MapToApiVersion("1.0")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Update(int userID, [FromBody] UpdateUserDataRequestModel requestModel, IOptions<ApiBehaviorOptions> apiBehaviorOptions)
+        public async Task<IActionResult> Update(int userID, [FromForm] UpdateUserDataRequestModel requestModel, IOptions<ApiBehaviorOptions> apiBehaviorOptions)
         {
             try
             {
-                var resultAsync = await _userService.UpdateUserRowData(requestModel.UserID, requestModel.UserName, requestModel.UserEmail, requestModel.UserAge, requestModel.UserGender, requestModel.UserPassword);
+                if (!userID.Equals(requestModel.UserID))
+                {
+                    return BadRequest("O ID do usuário não corresponde ao ID fornecido.");
+                }
+
+                var resultAsync = await _userService.UpdateUserRowData(requestModel.UserID, requestModel.UserName, requestModel.UserEmail, requestModel.UserAge, requestModel.UserGender, requestModel.UserPassword, requestModel.UserPicture);
 
                 if (!resultAsync)
                 {

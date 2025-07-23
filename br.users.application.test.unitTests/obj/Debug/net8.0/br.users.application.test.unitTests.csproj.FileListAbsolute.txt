@@ -60,6 +60,7 @@ C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\n
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\NuGet.Frameworks.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

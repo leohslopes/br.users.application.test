@@ -3,10 +3,12 @@ using br.users.application.test.domain.Entities.UserCx;
 using br.users.application.test.domain.Interfaces.Messaging;
 using br.users.application.test.domain.Interfaces.Repositories;
 using br.users.application.test.domain.Interfaces.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using MySqlX.XDevAPI.Common;
 using System.Security.Cryptography;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace br.users.application.test.application.Services
 {
@@ -106,7 +108,7 @@ namespace br.users.application.test.application.Services
             }
         }
 
-        public async Task<bool> UpdateUserRowData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser)
+        public async Task<bool> UpdateUserRowData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser)
         {
             bool controlProcess = false;
 
@@ -128,7 +130,7 @@ namespace br.users.application.test.application.Services
                     }
 
                     _logger.LogInformation($"Atualizando o usuário do código {userID} na tabela USERS_CX.");
-                    await _userRepository.UpdateUserData(userID, nameUser, emailUser, ageUser, genderUser, passwordUser);
+                    await _userRepository.UpdateUserData(userID, nameUser, emailUser, ageUser, genderUser, passwordUser, pictureUser);
                     _logger.LogInformation($"Registro do usuário do código {userID} atualizado com sucesso na tabela USERS_CX.");
 
                     controlProcess = true;

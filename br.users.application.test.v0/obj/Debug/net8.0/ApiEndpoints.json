@@ -65,9 +65,39 @@
         "IsRequired": true
       },
       {
-        "Name": "requestModel",
-        "Type": "br.users.application.test.v0.Models.Requests.UpdateUserDataRequestModel",
-        "IsRequired": true
+        "Name": "UserID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserAge",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserGender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserPicture",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

@@ -28,5 +28,9 @@ namespace br.users.application.test.v0.Models.Requests
         [Required(ErrorMessage = "Campo [userPassword] é obrigatório")]
         [JsonPropertyName("userPassword")]
         public required string UserPassword { get; set; }
+
+        [Required(ErrorMessage = "Campo [userPicture] é obrigatório")]
+        [JsonPropertyName("userPicture")]
+        public IFormFile? UserPicture { get; set; }
     }
 }

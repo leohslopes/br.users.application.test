@@ -14,26 +14,30 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                     "email_user AS UserEmail, " +
                                                     "age_user AS UserAge, " +
                                                     "gender_user AS UserGender, " +
-                                                    "password_user AS UserPassword " +
+                                                    "password_user AS UserPassword, " +
+                                                    "picture_user AS UserPicture "+
                                                     "FROM users_cx";
 
         public static readonly string InsertUserData = @"INSERT INTO users_cx(name_user, " +
                                                        "email_user, " +
                                                        "age_user, " +
                                                        "gender_user," +
-                                                       "password_user) " +
+                                                       "password_user," +
+                                                       "picture_user) " +
                                                        "VALUES (@P_NAME_USER, " +
                                                        "@P_EMAIL_USER, " +
                                                        "@P_AGE_USER, " +
                                                        "@P_GENDER_USER, " +
-                                                       "@P_PASSWORD_USER)";
+                                                       "@P_PASSWORD_USER," +
+                                                       "NULL)";
 
         public static readonly string UpdateUserData = @"UPDATE users_cx SET "+
                                                        "name_user = @P_NAME_USER, " +
                                                        "email_user = @P_EMAIL_USER, " +
                                                        "age_user = @P_AGE_USER, " +
                                                        "gender_user = @P_GENDER_USER, " +
-                                                       "password_user = @P_PASSWORD_USER " +
+                                                       "password_user = @P_PASSWORD_USER, " +
+                                                       "picture_user = @P_PICTURE_USER " +
                                                        "WHERE id_user = @P_USER_ID";
 
         public static readonly string DeleteUserData = "DELETE FROM users_cx WHERE id_user = @P_USER_ID";

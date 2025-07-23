@@ -1,4 +1,5 @@
 ﻿using br.users.application.test.domain.Entities.UserCx;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace br.users.application.test.domain.Interfaces.Repositories
 
         Task InsertUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
 
-        Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
+        Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser);
 
         Task DeleteUserData(int userID);
     }

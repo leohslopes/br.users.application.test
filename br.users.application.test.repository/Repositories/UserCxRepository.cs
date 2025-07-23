@@ -4,6 +4,7 @@ using br.users.application.test.domain.Interfaces.Repositories;
 using br.users.application.test.repository.Databases.Interfaces;
 using br.users.application.test.repository.Repositories.SQLStatement;
 using Dapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -71,7 +72,7 @@ namespace br.users.application.test.repository.Repositories
             }
         }
 
-        public async Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser)
+        public async Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser)
         {
             try
             {
@@ -79,12 +80,12 @@ namespace br.users.application.test.repository.Repositories
                     !string.IsNullOrWhiteSpace(nameUser) && 
                     !string.IsNullOrWhiteSpace(emailUser) && 
                     ageUser != 0 && 
-                    !string.IsNullOrWhiteSpace(genderUser) && 
-                    !string.IsNullOrWhiteSpace(passwordUser))
+                    !string.IsNullOrWhiteSpace(genderUser))
                 {
-                    var user = new Users() { UserID = userID, UserName = nameUser, UserEmail = emailUser, UserAge = ageUser, UserGender = genderUser, UserPassword = passwordUser };
+                    var user = new Users() { UserID = userID, UserName = nameUser, UserEmail = emailUser, UserAge = ageUser, UserGender = genderUser, UserPassword = passwordUser};
                     var passwordHasher = new PasswordHasher<Users>();
                     var passwordHash = passwordHasher.HashPassword(user, user.UserPassword);
+                    var imgBytes = await GetImageBytes(pictureUser);
 
                     string query = UserCxSQLStatements.UpdateUserData;
                     DynamicParameters dynamicParameters = new();
@@ -93,6 +94,7 @@ namespace br.users.application.test.repository.Repositories
                     dynamicParameters.Add("P_AGE_USER", user.UserAge, System.Data.DbType.Int32, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_GENDER_USER", user.UserGender.ToUpper().Trim(), System.Data.DbType.String, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_PASSWORD_USER", passwordHash, System.Data.DbType.String, System.Data.ParameterDirection.Input);
+                    dynamicParameters.Add("P_PICTURE_USER", imgBytes, System.Data.DbType.Binary, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_USER_ID", user.UserID, System.Data.DbType.Int32, System.Data.ParameterDirection.Input);
 
                     await _dbMySQLSession.ExecuteScalarAsync(query, dynamicParameters);
@@ -121,6 +123,20 @@ namespace br.users.application.test.repository.Repositories
             {
                 throw new Exception($"[DeleteUserData] - Erro ao excluir da tabela USERS_CX: {ex.Message}");
             }
+        }
+
+        private async Task<byte[]> GetImageBytes(IFormFile? pictureUser)
+        {
+            byte[]? imgBytes = null;
+
+            if (pictureUser is not null)
+            {
+                using var ms = new MemoryStream();
+                await pictureUser.CopyToAsync(ms);
+                imgBytes = ms.ToArray();
+            }
+
+            return imgBytes;
         }
     }
 }

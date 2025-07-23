@@ -148,19 +148,67 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateUserDataRequestModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateUserDataRequestModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateUserDataRequestModel"
+                "required": [
+                  "UserAge",
+                  "UserEmail",
+                  "UserGender",
+                  "UserID",
+                  "UserName",
+                  "UserPassword",
+                  "UserPicture"
+                ],
+                "type": "object",
+                "properties": {
+                  "UserID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserName": {
+                    "type": "string"
+                  },
+                  "UserEmail": {
+                    "type": "string"
+                  },
+                  "UserAge": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserGender": {
+                    "type": "string"
+                  },
+                  "UserPassword": {
+                    "type": "string"
+                  },
+                  "UserPicture": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "UserID": {
+                  "style": "form"
+                },
+                "UserName": {
+                  "style": "form"
+                },
+                "UserEmail": {
+                  "style": "form"
+                },
+                "UserAge": {
+                  "style": "form"
+                },
+                "UserGender": {
+                  "style": "form"
+                },
+                "UserPassword": {
+                  "style": "form"
+                },
+                "UserPicture": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -271,44 +319,6 @@
         "type": "object",
         "properties": {
           "userEmail": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "userPassword": {
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
-      "UpdateUserDataRequestModel": {
-        "required": [
-          "userAge",
-          "userEmail",
-          "userGender",
-          "userID",
-          "userName",
-          "userPassword"
-        ],
-        "type": "object",
-        "properties": {
-          "userID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "userName": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "userEmail": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "userAge": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "userGender": {
             "minLength": 1,
             "type": "string"
           },

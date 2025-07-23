@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,7 @@ namespace br.users.application.test.domain.Entities.UserCx
         public required string UserGender { get; set; }
 
         public required string UserPassword { get; set; }
+
+        public byte[]? UserPicture { get; set; }
     }
 }
