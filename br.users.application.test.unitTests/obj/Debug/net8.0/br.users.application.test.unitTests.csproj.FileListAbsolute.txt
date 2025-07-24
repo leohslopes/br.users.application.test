@@ -1,4 +1,10 @@
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\CoverletSourceRootsMapping_br.users.application.test.unitTests
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.AssemblyReference.cache
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.AssemblyInfoInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.AssemblyInfo.cs
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.CoreCompileInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.sourcelink.json
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\testhost.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.v0.deps.json
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.v0.runtimeconfig.json
@@ -60,7 +66,6 @@ C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\n
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\NuGet.Frameworks.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\RabbitMQ.Client.dll
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -162,12 +167,6 @@ C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\n
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.crossCutting.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.messasing.pdb
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\br.users.application.test.repository.pdb
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.AssemblyReference.cache
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.AssemblyInfoInputs.cache
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.AssemblyInfo.cs
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.CoreCompileInputs.cache
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.sourcelink.json
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.2DA185D4.Up2Date
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.dll
 C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\refint\br.users.application.test.unitTests.dll

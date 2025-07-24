@@ -1,4 +1,5 @@
-﻿using System;
+﻿using br.users.application.test.domain.Entities.Messasing;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace br.users.application.test.domain.Interfaces.Messaging
 {
     public interface IMessageBusService
     {
-        void PublishMessage(object data, string routingKey);
+        void PublishMessage(UserDTO dto);
     }
 }

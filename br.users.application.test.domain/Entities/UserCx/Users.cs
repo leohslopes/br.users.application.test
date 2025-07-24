@@ -23,6 +23,8 @@ namespace br.users.application.test.domain.Entities.UserCx
 
         public byte[]? UserPicture { get; set; }
 
-        public string UserOfficialNumber { get; set; }
+        public required string UserOfficialNumber { get; set; }
+
+        public DateTime DateAlter {  get; set; }
     }
 }

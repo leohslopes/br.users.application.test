@@ -37,14 +37,7 @@ builder.Services.AddSwaggerGen(c =>
         { jwtScheme, Array.Empty<string>() }
     });
 });
-//builder.Services.Configure<AppSettings>(builder.Configuration.GetSection(nameof(AppSettings)));
-//builder.Services.AddCors(option => option.AddDefaultPolicy(policy =>
-//{
-//    policy.AllowAnyOrigin();
-//    policy.AllowAnyMethod();
-//    policy.AllowAnyHeader();
-//}));
-//- CORS
+
 builder.Services.AddCors(opt => {
     opt.AddPolicy(name: baseCorsPolicy, policy => {
         policy.AllowAnyMethod();

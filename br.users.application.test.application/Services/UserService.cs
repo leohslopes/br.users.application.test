@@ -5,10 +5,8 @@ using br.users.application.test.domain.Interfaces.Repositories;
 using br.users.application.test.domain.Interfaces.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using MySqlX.XDevAPI.Common;
-using System.Security.Cryptography;
 using System.Text;
-using static System.Net.Mime.MediaTypeNames;
+
 
 namespace br.users.application.test.application.Services
 {
@@ -25,13 +23,13 @@ namespace br.users.application.test.application.Services
             _messageBusService = messageBusService;
         }
 
-       public async Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool filterImg)
+       public async Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool? filterImg)
         {
             IEnumerable<Users> result;
 
             try
             {
-                if (!string.IsNullOrEmpty(filterName) || !string.IsNullOrEmpty(filterEmail) || filterImg)
+                if (!string.IsNullOrEmpty(filterName) || !string.IsNullOrEmpty(filterEmail) || filterImg.HasValue)
                 {
                     result = await _userRepository.GetUsersWithFilters(filterName, filterEmail, filterImg);
                 }
@@ -76,16 +74,11 @@ namespace br.users.application.test.application.Services
 
                     controlProcess = true;
 
-                    //var orderUpdatedEvent = new ShppingOrderUpdatedEvent(nameUser, emailUser, "user-inserted");
-                    //_messageBusService.PublishMessage(orderUpdatedEvent, "shipping-order-updated");
-
-
-
-                    //if (controlProcess)
-                    //{
-                    //    var orderCompletedEvent = new ShppingOrderCompletedEvent(nameUser);
-                    //    _messageBusService.PublishMessage(orderCompletedEvent, "shipping-order-completed");
-                    //}
+                    if (controlProcess)
+                    {
+                        var dto = new UserDTO() { UserName = nameUser, UserEmail = emailUser, DatePublisher = DateTime.Now };
+                        _messageBusService.PublishMessage(dto);
+                    }
                 }
             }
             catch (Exception ex)

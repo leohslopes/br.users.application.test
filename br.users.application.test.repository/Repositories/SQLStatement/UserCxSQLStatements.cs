@@ -16,7 +16,8 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                     "gender_user AS UserGender, " +
                                                     "password_user AS UserPassword, " +
                                                     "picture_user AS UserPicture, "+
-                                                    "official_number_user AS UserOfficialNumber " +
+                                                    "official_number_user AS UserOfficialNumber, " +
+                                                    "date_alter AS DateAlter " +
                                                     "FROM users_cx";
 
         public static readonly string InsertUserData = @"INSERT INTO users_cx(name_user, " +
@@ -26,7 +27,8 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                        "password_user," +
                                                        "picture_user," +
                                                        "official_number_user," +
-                                                       "search_field) " +
+                                                       "search_field, " +
+                                                       "date_alter) " +
                                                        "VALUES (@P_NAME_USER, " +
                                                        "@P_EMAIL_USER, " +
                                                        "@P_AGE_USER, " +
@@ -34,7 +36,8 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                        "@P_PASSWORD_USER," +
                                                        "NULL, " +
                                                        "@P_OFFICIAL_NUMBER_USER, " +
-                                                       "@P_SEARCH_FIELD)";
+                                                       "@P_SEARCH_FIELD, " +
+                                                       "NOW())";
 
         public static readonly string UpdateUserData = @"UPDATE users_cx SET "+
                                                        "name_user = @P_NAME_USER, " +
@@ -44,7 +47,8 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                        "password_user = @P_PASSWORD_USER, " +
                                                        "picture_user = @P_PICTURE_USER, " +
                                                        "official_number_user = @P_OFFICIAL_NUMBER_USER, " +
-                                                       "search_field = @P_SEARCH_FIELD " +
+                                                       "search_field = @P_SEARCH_FIELD, " +
+                                                       "date_alter = NOW() " +
                                                        "WHERE id_user = @P_USER_ID";
 
         public static readonly string DeleteUserData = "DELETE FROM users_cx WHERE id_user = @P_USER_ID";
@@ -56,7 +60,8 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                             "gender_user AS UserGender, " +
                                                             "password_user AS UserPassword, " +
                                                             "picture_user AS UserPicture, " +
-                                                            "official_number_user AS UserOfficialNumber " +
+                                                            "official_number_user AS UserOfficialNumber, " +
+                                                            "date_alter AS DateAlter " +
                                                             "FROM users_cx " +
                                                             "WHERE (@P_SEARCH_FIELD IS NULL OR UPPER(search_field) LIKE @P_SEARCH_FIELD) " +
                                                             "AND (@P_EMAIL_USER IS NULL OR UPPER(email_user) = @P_EMAIL_USER) " +

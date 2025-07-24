@@ -9,6 +9,6 @@ namespace br.users.application.test.v0.Models.Requests
         
         public string? FilterEmail { get; set; }
        
-        public bool FilterImg { get; set; }
+        public bool? FilterImg { get; set; }
     }
 }

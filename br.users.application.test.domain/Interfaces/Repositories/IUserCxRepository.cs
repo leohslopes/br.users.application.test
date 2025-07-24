@@ -18,6 +18,6 @@ namespace br.users.application.test.domain.Interfaces.Repositories
 
         Task DeleteUserData(int userID);
 
-        Task<IEnumerable<Users>> GetUsersWithFilters(string filterName, string filterEmail, bool filterImg);
+        Task<IEnumerable<Users>> GetUsersWithFilters(string filterName, string filterEmail, bool? filterImg);
     }
 }

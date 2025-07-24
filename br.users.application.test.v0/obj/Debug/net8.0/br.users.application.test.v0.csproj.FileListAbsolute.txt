@@ -1,3 +1,10 @@
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.csproj.AssemblyReference.cache
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.AssemblyInfoInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.AssemblyInfo.cs
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.csproj.CoreCompileInputs.cache
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.MvcApplicationPartsAssemblyInfo.cache
+C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.sourcelink.json
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\appsettings.Development.json
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\appsettings.json
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\br.users.application.test.v0.staticwebassets.endpoints.json
@@ -71,14 +78,7 @@ C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\b
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\br.users.application.test.application.pdb
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\br.users.application.test.messasing.pdb
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\br.users.application.test.repository.pdb
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.csproj.AssemblyReference.cache
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.GeneratedMSBuildEditorConfig.editorconfig
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.AssemblyInfoInputs.cache
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.AssemblyInfo.cs
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.csproj.CoreCompileInputs.cache
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.MvcApplicationPartsAssemblyInfo.cs
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.MvcApplicationPartsAssemblyInfo.cache
-C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.sourcelink.json
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\scopedcss\bundle\br.users.application.test.v0.styles.css
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\staticwebassets.build.json
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\staticwebassets.build.json.cache

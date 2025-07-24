@@ -134,7 +134,7 @@ namespace br.users.application.test.repository.Repositories
             }
         }
 
-        public async Task<IEnumerable<Users>> GetUsersWithFilters(string filterName, string filterEmail, bool filterImg)
+        public async Task<IEnumerable<Users>> GetUsersWithFilters(string filterName, string filterEmail, bool? filterImg)
         {
             IEnumerable<Users> result;
 
@@ -144,7 +144,7 @@ namespace br.users.application.test.repository.Repositories
                 DynamicParameters dynamicParameters = new();
                 dynamicParameters.Add("P_SEARCH_FIELD", !string.IsNullOrEmpty(filterName) ? $"%{filterName.ToUpper().Trim()}%" : DBNull.Value, System.Data.DbType.String, System.Data.ParameterDirection.Input);
                 dynamicParameters.Add("P_EMAIL_USER", !string.IsNullOrEmpty(filterEmail) ? filterEmail.ToUpper().Trim() : DBNull.Value, System.Data.DbType.String, System.Data.ParameterDirection.Input);
-                dynamicParameters.Add("P_HAS_IMG", filterImg, System.Data.DbType.Boolean, System.Data.ParameterDirection.Input);
+                dynamicParameters.Add("P_HAS_IMG", filterImg.HasValue? filterImg.Value : DBNull.Value, System.Data.DbType.Boolean, System.Data.ParameterDirection.Input);
 
                 result = await _dbMySQLSession.QueryAsync<Users>(query, dynamicParameters);
             }
