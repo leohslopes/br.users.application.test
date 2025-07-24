@@ -101,10 +101,33 @@
         }
       }
     },
-    "/api/User/GetAll": {
+    "/api/User/filter-users": {
       "get": {
         "tags": [
           "User"
+        ],
+        "parameters": [
+          {
+            "name": "FilterName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FilterEmail",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FilterImg",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -156,6 +179,7 @@
                   "UserGender",
                   "UserID",
                   "UserName",
+                  "UserOfficialNumber",
                   "UserPassword",
                   "UserPicture"
                 ],
@@ -184,6 +208,9 @@
                   "UserPicture": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "UserOfficialNumber": {
+                    "type": "string"
                   }
                 }
               },
@@ -207,6 +234,9 @@
                   "style": "form"
                 },
                 "UserPicture": {
+                  "style": "form"
+                },
+                "UserOfficialNumber": {
                   "style": "form"
                 }
               }
@@ -284,6 +314,7 @@
           "userEmail",
           "userGender",
           "userName",
+          "userOfficialNumber",
           "userPassword"
         ],
         "type": "object",
@@ -305,6 +336,10 @@
             "type": "string"
           },
           "userPassword": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "userOfficialNumber": {
             "minLength": 1,
             "type": "string"
           }

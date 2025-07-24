@@ -25,13 +25,20 @@ namespace br.users.application.test.application.Services
             _messageBusService = messageBusService;
         }
 
-       public async Task<IEnumerable<Users>> GetItemsUserList()
+       public async Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool filterImg)
         {
             IEnumerable<Users> result;
 
             try
             {
-                result = await _userRepository.GetAllUsers();
+                if (!string.IsNullOrEmpty(filterName) || !string.IsNullOrEmpty(filterEmail) || filterImg)
+                {
+                    result = await _userRepository.GetUsersWithFilters(filterName, filterEmail, filterImg);
+                }
+                else
+                {
+                    result = await _userRepository.GetAllUsers();
+                }   
             }
             catch (ApplicationException ex)
             {
@@ -42,7 +49,7 @@ namespace br.users.application.test.application.Services
             return result;
         }
 
-        public async Task<bool> SaveNewResgisterUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser)
+        public async Task<bool> SaveNewResgisterUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, string officialNumberUser)
         {
             bool controlProcess = false;
 
@@ -64,7 +71,7 @@ namespace br.users.application.test.application.Services
                     }
                    
                     _logger.LogInformation($"Inserindo o usuário {nameUser.ToUpper().Trim()} na tabela USERS_CX.");
-                    await _userRepository.InsertUserData(nameUser, emailUser, ageUser, genderUser, passwordUser);
+                    await _userRepository.InsertUserData(nameUser, emailUser, ageUser, genderUser, passwordUser, officialNumberUser);
                     _logger.LogInformation($"Registro do usuário {nameUser.ToUpper().Trim()} feito com sucesso na tabela USERS_CX.");
 
                     controlProcess = true;
@@ -108,7 +115,7 @@ namespace br.users.application.test.application.Services
             }
         }
 
-        public async Task<bool> UpdateUserRowData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser)
+        public async Task<bool> UpdateUserRowData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser, string officialNumberUser)
         {
             bool controlProcess = false;
 
@@ -130,7 +137,7 @@ namespace br.users.application.test.application.Services
                     }
 
                     _logger.LogInformation($"Atualizando o usuário do código {userID} na tabela USERS_CX.");
-                    await _userRepository.UpdateUserData(userID, nameUser, emailUser, ageUser, genderUser, passwordUser, pictureUser);
+                    await _userRepository.UpdateUserData(userID, nameUser, emailUser, ageUser, genderUser, passwordUser, pictureUser, officialNumberUser);
                     _logger.LogInformation($"Registro do usuário do código {userID} atualizado com sucesso na tabela USERS_CX.");
 
                     controlProcess = true;

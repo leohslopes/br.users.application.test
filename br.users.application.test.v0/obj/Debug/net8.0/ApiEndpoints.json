@@ -98,6 +98,11 @@
         "Name": "UserPicture",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      },
+      {
+        "Name": "UserOfficialNumber",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -141,11 +146,27 @@
   {
     "ContainingType": "br.users.application.test.v0.Controllers.UserController",
     "Method": "GetAll",
-    "RelativePath": "api/User/GetAll",
+    "RelativePath": "api/User/filter-users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "FilterName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterImg",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.String",

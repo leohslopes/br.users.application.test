@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace br.users.application.test.repository.Repositories
@@ -40,7 +41,7 @@ namespace br.users.application.test.repository.Repositories
             return result;
         }
 
-        public async Task InsertUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser)
+        public async Task InsertUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, string officialNumberUser)
         {
 
             try
@@ -49,11 +50,13 @@ namespace br.users.application.test.repository.Repositories
                     !string.IsNullOrWhiteSpace(emailUser) && 
                     ageUser != 0 && 
                     !string.IsNullOrWhiteSpace(genderUser) && 
-                    !string.IsNullOrWhiteSpace(passwordUser))
+                    !string.IsNullOrWhiteSpace(passwordUser) &&
+                    !string.IsNullOrWhiteSpace(officialNumberUser))
                 {
-                    var user = new Users() { UserID = 0, UserName = nameUser, UserEmail = emailUser, UserAge = ageUser, UserGender = genderUser, UserPassword = passwordUser };
+                    var user = new Users() { UserID = 0, UserName = nameUser, UserEmail = emailUser, UserAge = ageUser, UserGender = genderUser, UserPassword = passwordUser, UserOfficialNumber = officialNumberUser};
                     var passwordHasher = new PasswordHasher<Users>();
                     var passwordHash = passwordHasher.HashPassword(user, user.UserPassword);
+                    var seachField = await ClearText(user.UserName);
 
                     string query = UserCxSQLStatements.InsertUserData;
                     DynamicParameters dynamicParameters = new();
@@ -62,6 +65,8 @@ namespace br.users.application.test.repository.Repositories
                     dynamicParameters.Add("P_AGE_USER", user.UserAge, System.Data.DbType.Int32, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_GENDER_USER", user.UserGender.ToUpper().Trim(), System.Data.DbType.String, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_PASSWORD_USER", passwordHash, System.Data.DbType.String, System.Data.ParameterDirection.Input);
+                    dynamicParameters.Add("P_OFFICIAL_NUMBER_USER", user.UserOfficialNumber, System.Data.DbType.String, System.Data.ParameterDirection.Input);
+                    dynamicParameters.Add("P_SEARCH_FIELD", seachField.Replace(" ",""), System.Data.DbType.String, System.Data.ParameterDirection.Input);
 
                     await _dbMySQLSession.ExecuteScalarAsync(query, dynamicParameters);
                 }
@@ -72,7 +77,7 @@ namespace br.users.application.test.repository.Repositories
             }
         }
 
-        public async Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser)
+        public async Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser, string officialNumberUser)
         {
             try
             {
@@ -80,12 +85,14 @@ namespace br.users.application.test.repository.Repositories
                     !string.IsNullOrWhiteSpace(nameUser) && 
                     !string.IsNullOrWhiteSpace(emailUser) && 
                     ageUser != 0 && 
-                    !string.IsNullOrWhiteSpace(genderUser))
+                    !string.IsNullOrWhiteSpace(genderUser) &&
+                    !string.IsNullOrWhiteSpace(officialNumberUser))
                 {
-                    var user = new Users() { UserID = userID, UserName = nameUser, UserEmail = emailUser, UserAge = ageUser, UserGender = genderUser, UserPassword = passwordUser};
+                    var user = new Users() { UserID = userID, UserName = nameUser, UserEmail = emailUser, UserAge = ageUser, UserGender = genderUser, UserPassword = passwordUser, UserOfficialNumber = officialNumberUser };
                     var passwordHasher = new PasswordHasher<Users>();
                     var passwordHash = passwordHasher.HashPassword(user, user.UserPassword);
                     var imgBytes = await GetImageBytes(pictureUser);
+                    var seachField = await ClearText(user.UserName);
 
                     string query = UserCxSQLStatements.UpdateUserData;
                     DynamicParameters dynamicParameters = new();
@@ -95,6 +102,8 @@ namespace br.users.application.test.repository.Repositories
                     dynamicParameters.Add("P_GENDER_USER", user.UserGender.ToUpper().Trim(), System.Data.DbType.String, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_PASSWORD_USER", passwordHash, System.Data.DbType.String, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_PICTURE_USER", imgBytes, System.Data.DbType.Binary, System.Data.ParameterDirection.Input);
+                    dynamicParameters.Add("P_OFFICIAL_NUMBER_USER", user.UserOfficialNumber, System.Data.DbType.String, System.Data.ParameterDirection.Input);
+                    dynamicParameters.Add("P_SEARCH_FIELD", seachField.Replace(" ", ""), System.Data.DbType.String, System.Data.ParameterDirection.Input);
                     dynamicParameters.Add("P_USER_ID", user.UserID, System.Data.DbType.Int32, System.Data.ParameterDirection.Input);
 
                     await _dbMySQLSession.ExecuteScalarAsync(query, dynamicParameters);
@@ -125,6 +134,28 @@ namespace br.users.application.test.repository.Repositories
             }
         }
 
+        public async Task<IEnumerable<Users>> GetUsersWithFilters(string filterName, string filterEmail, bool filterImg)
+        {
+            IEnumerable<Users> result;
+
+            try
+            {
+                string query = UserCxSQLStatements.GetUsersWithFilters;
+                DynamicParameters dynamicParameters = new();
+                dynamicParameters.Add("P_SEARCH_FIELD", !string.IsNullOrEmpty(filterName) ? $"%{filterName.ToUpper().Trim()}%" : DBNull.Value, System.Data.DbType.String, System.Data.ParameterDirection.Input);
+                dynamicParameters.Add("P_EMAIL_USER", !string.IsNullOrEmpty(filterEmail) ? filterEmail.ToUpper().Trim() : DBNull.Value, System.Data.DbType.String, System.Data.ParameterDirection.Input);
+                dynamicParameters.Add("P_HAS_IMG", filterImg, System.Data.DbType.Boolean, System.Data.ParameterDirection.Input);
+
+                result = await _dbMySQLSession.QueryAsync<Users>(query, dynamicParameters);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"[GetUsersWithFilters] - Erro ao fazer a consulta dos dados na tabela USERS_CX com filtros de nome e/ou e-mail: {ex.Message}");
+            }
+
+            return result;
+        }
+
         private async Task<byte[]> GetImageBytes(IFormFile? pictureUser)
         {
             byte[]? imgBytes = null;
@@ -137,6 +168,15 @@ namespace br.users.application.test.repository.Repositories
             }
 
             return imgBytes;
+        }
+
+        private async Task<string> ClearText(string input)
+        {
+            string textNormalize = input.Normalize(NormalizationForm.FormD);
+            string noAccent = Regex.Replace(textNormalize, @"\p{Mn}+", "");
+            string clearInput = Regex.Replace(noAccent, @"[^a-zA-Z0-9\s]", "");
+
+            return clearInput.ToUpper();
         }
     }
 }

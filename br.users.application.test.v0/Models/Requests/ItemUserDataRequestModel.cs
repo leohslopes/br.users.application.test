@@ -24,5 +24,9 @@ namespace br.users.application.test.v0.Models.Requests
         [Required(ErrorMessage = "Campo [userPassword] é obrigatório")]
         [JsonPropertyName("userPassword")]
         public required string UserPassword { get; set; }
+
+        [Required(ErrorMessage = "Campo [userOfficialNumber] é obrigatório")]
+        [JsonPropertyName("userOfficialNumber")]
+        public required string UserOfficialNumber { get; set; }
     }
 }

@@ -12,10 +12,12 @@ namespace br.users.application.test.domain.Interfaces.Repositories
     {
         Task<IEnumerable<Users>> GetAllUsers();
 
-        Task InsertUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser);
+        Task InsertUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, string officialNumberUser);
 
-        Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser);
+        Task UpdateUserData(int userID, string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, IFormFile? pictureUser, string officialNumberUser);
 
         Task DeleteUserData(int userID);
+
+        Task<IEnumerable<Users>> GetUsersWithFilters(string filterName, string filterEmail, bool filterImg);
     }
 }

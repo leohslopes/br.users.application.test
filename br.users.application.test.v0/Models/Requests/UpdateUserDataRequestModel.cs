@@ -32,5 +32,9 @@ namespace br.users.application.test.v0.Models.Requests
         [Required(ErrorMessage = "Campo [userPicture] é obrigatório")]
         [JsonPropertyName("userPicture")]
         public IFormFile? UserPicture { get; set; }
+
+        [Required(ErrorMessage = "Campo [userOfficialNumber] é obrigatório")]
+        [JsonPropertyName("userOfficialNumber")]
+        public required string UserOfficialNumber { get; set; }
     }
 }

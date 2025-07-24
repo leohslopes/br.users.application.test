@@ -22,13 +22,13 @@ namespace br.users.application.test.v0.Controllers
             _userService = userService;
         }
 
-        [HttpGet("GetAll"), MapToApiVersion("1.0")]
+        [HttpGet("filter-users"), MapToApiVersion("1.0")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] FilterUsersRequestModel requestModel, IOptions<ApiBehaviorOptions> apiBehaviorOptions)
         {
             try
             {
-                var resultAsync = await _userService.GetItemsUserList();
+                var resultAsync = await _userService.GetItemsUserList(requestModel.FilterName, requestModel.FilterEmail, requestModel.FilterImg);
 
                 return Ok(new StatusCode200TypedResponseModel<IEnumerable<Users>>()
                 {
@@ -58,7 +58,7 @@ namespace br.users.application.test.v0.Controllers
                     return BadRequest("O ID do usuário não corresponde ao ID fornecido.");
                 }
 
-                var resultAsync = await _userService.UpdateUserRowData(requestModel.UserID, requestModel.UserName, requestModel.UserEmail, requestModel.UserAge, requestModel.UserGender, requestModel.UserPassword, requestModel.UserPicture);
+                var resultAsync = await _userService.UpdateUserRowData(requestModel.UserID, requestModel.UserName, requestModel.UserEmail, requestModel.UserAge, requestModel.UserGender, requestModel.UserPassword, requestModel.UserPicture, requestModel.UserOfficialNumber);
 
                 if (!resultAsync)
                 {

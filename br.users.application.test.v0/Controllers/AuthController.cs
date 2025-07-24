@@ -71,7 +71,7 @@ namespace br.users.application.test.v0.Controllers
         {
             try
             {
-                var resultAsync = await _userService.SaveNewResgisterUserData(requestModel.UserName, requestModel.UserEmail, requestModel.UserAge, requestModel.UserGender, requestModel.UserPassword);
+                var resultAsync = await _userService.SaveNewResgisterUserData(requestModel.UserName, requestModel.UserEmail, requestModel.UserAge, requestModel.UserGender, requestModel.UserPassword, requestModel.UserOfficialNumber);
 
                 if (!resultAsync)
                 {

@@ -41,7 +41,6 @@ C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\M
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\RabbitMQ.Client.dll
-C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
