@@ -32,12 +32,14 @@ namespace br.users.application.test.crossCutting.IoC
         private static void RegisterRepositories(IServiceCollection services)
         {
             services.AddScoped<IUserCxRepository, UserCxRepository>();
+            services.AddScoped<IArchiveRepository, ArchiveRepository>();
         }
 
         private static void RegisterServices(IServiceCollection services)
         {
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IPasswordHasher<Users>, PasswordHasher<Users>>();
+            services.AddScoped<IArchiveService, ArchiveService>();
         }
 
         private static void RegisterMessages(IServiceCollection services) 

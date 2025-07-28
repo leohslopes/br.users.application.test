@@ -91,3 +91,12 @@ C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\r
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.pdb
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\br.users.application.test.v0.genruntimeconfig.cache
 C:\DEV\br.users.application.test\br.users.application.test.v0\obj\Debug\net8.0\ref\br.users.application.test.v0.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\ClosedXML.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\CsvHelper.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\RBush.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\DEV\br.users.application.test\br.users.application.test.v0\bin\Debug\net8.0\System.IO.Packaging.dll

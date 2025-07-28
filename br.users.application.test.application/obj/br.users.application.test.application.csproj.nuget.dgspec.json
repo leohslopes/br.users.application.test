@@ -55,6 +55,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.1.66, )"
@@ -191,6 +195,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.1.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.1.66, )"
