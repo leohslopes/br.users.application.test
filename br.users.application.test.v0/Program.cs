@@ -1,5 +1,6 @@
 using br.users.application.test.crossCutting.IoC;
 using br.users.application.test.domain.Entities;
+using br.users.application.test.messasing;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -79,6 +80,8 @@ builder.Services.AddSingleton(appSetting);
 builder.Services.RegisterAllClasses(builder.Configuration);
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddHostedService<WorkMessage>();
 
 
 var app = builder.Build();

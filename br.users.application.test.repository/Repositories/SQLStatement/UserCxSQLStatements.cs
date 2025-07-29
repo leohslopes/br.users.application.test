@@ -65,7 +65,8 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                             "FROM users_cx " +
                                                             "WHERE (@P_SEARCH_FIELD IS NULL OR UPPER(search_field) LIKE @P_SEARCH_FIELD) " +
                                                             "AND (@P_EMAIL_USER IS NULL OR UPPER(email_user) = @P_EMAIL_USER) " +
-                                                            "AND (@P_HAS_IMG IS NULL OR (@P_HAS_IMG = FALSE AND picture_user IS NOT NULL) OR (@P_HAS_IMG = TRUE AND picture_user IS NULL))";
+                                                            "AND (@P_HAS_IMG IS NULL OR (@P_HAS_IMG = FALSE AND picture_user IS NOT NULL) OR (@P_HAS_IMG = TRUE AND picture_user IS NULL)) " +
+                                                            "AND (@P_RECS_USER IS NULL OR (@P_RECS_USER = TRUE AND DATE(date_alter) = CURDATE())) ";
 
         public static readonly string GetUserEmailExists = "SELECT COUNT(*) FROM users_cx WHERE UPPER(email_user) = @P_EMAIL_USER";
 

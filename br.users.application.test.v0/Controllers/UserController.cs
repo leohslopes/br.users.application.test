@@ -28,7 +28,7 @@ namespace br.users.application.test.v0.Controllers
         {
             try
             {
-                var resultAsync = await _userService.GetItemsUserList(requestModel.FilterName, requestModel.FilterEmail, requestModel.FilterImg);
+                var resultAsync = await _userService.GetItemsUserList(requestModel.FilterName, requestModel.FilterEmail, requestModel.FilterImg, requestModel.FilterRecentUsers);
 
                 return Ok(new StatusCode200TypedResponseModel<IEnumerable<Users>>()
                 {

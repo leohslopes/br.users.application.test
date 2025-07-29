@@ -1,6 +1,46 @@
 [
   {
     "ContainingType": "br.users.application.test.v0.Controllers.ArchiveController",
+    "Method": "Delete",
+    "RelativePath": "api/Archive/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "br.users.application.test.v0.Controllers.ArchiveController",
+    "Method": "Download",
+    "RelativePath": "api/Archive/Download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "br.users.application.test.v0.Controllers.ArchiveController",
     "Method": "Import",
     "RelativePath": "api/Archive/Import",
     "HttpMethod": "POST",
@@ -189,6 +229,11 @@
       },
       {
         "Name": "FilterImg",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterRecentUsers",
         "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }

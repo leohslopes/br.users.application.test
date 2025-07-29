@@ -9,8 +9,8 @@ namespace br.users.application.test.application.Validators
         public UserModelValidator()
         {
             RuleFor(x => x.UserOfficialNumber)
-                .NotEmpty().WithMessage("O CPF é obrigatório.")
-                .Must(predicate: BeValidCpf).WithMessage("CPF inválido.");
+                .NotEmpty().WithMessage("O CPF é obrigatório.");
+                //.Must(predicate: BeValidCpf).WithMessage("CPF inválido.");
 
             RuleFor(x => x.UserName)
                 .NotEmpty().WithMessage("O nome é obrigatório.")

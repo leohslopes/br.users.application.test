@@ -1,6 +1,7 @@
 ﻿using br.users.application.test.application.Validators;
 using br.users.application.test.domain.Entities.Achive;
 using br.users.application.test.domain.Entities.UserCx;
+using br.users.application.test.domain.Interfaces.Messaging;
 using br.users.application.test.domain.Interfaces.Repositories;
 using br.users.application.test.domain.Interfaces.Services;
 using ClosedXML.Excel;
@@ -8,6 +9,8 @@ using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MySqlX.XDevAPI.Common;
 using System;
@@ -23,10 +26,13 @@ namespace br.users.application.test.application.Services
     {
         private readonly ILogger<ArchiveService> _logger;
         private readonly IArchiveRepository _archiveRepository;
-        public ArchiveService(ILogger<ArchiveService> logger, IArchiveRepository archiveRepository)
+        private readonly IMessageBusService _messageBusService;
+       
+        public ArchiveService(ILogger<ArchiveService> logger, IArchiveRepository archiveRepository, IMessageBusService messageBusService)
         {
            _logger = logger;
-            _archiveRepository = archiveRepository;
+           _archiveRepository = archiveRepository;
+           _messageBusService = messageBusService;
         }
 
         public async Task<ResultSetImportArchive> ImportMassiveUsersData(IFormFile file)
@@ -132,6 +138,13 @@ namespace br.users.application.test.application.Services
                         bool valid = await _archiveRepository.InsertAllUsers(users);
                         _logger.LogInformation($"Inserção massiva dos usuários na tabela USERS_CX feita com sucesso. Total: {users.Count}");
 
+                        _logger.LogInformation($"Inserindo os usuários massivamente na fila do RabbitMQ. Total: {users.Count}");
+                        users.ForEach(x =>
+                        {
+                            _messageBusService.PublishMessage(new domain.Entities.Messasing.UserDTO { UserEmail = x.UserEmail, UserName = x.UserName, DatePublisher = DateTime.Now });
+                        });
+                        _logger.LogInformation($"Inserção massiva dos usuários na fila do RabbitMQ feita com sucesso Total: {users.Count}");
+
                         if (valid)
                         {
                             _logger.LogInformation("Gerando a planilha de retorno do input massivo.");
@@ -153,6 +166,63 @@ namespace br.users.application.test.application.Services
 
             return resultSet;
 
+        }
+
+        public async Task<string> ExportReportLogUsersData()
+        {
+            string base64 = string.Empty;
+
+            try
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "output", "relatorioLogFila.xlsx");
+
+                if (!File.Exists(filePath))
+                {
+                    _logger.LogInformation($"Relatório de log não encontrado no servidor.");
+                    throw new ApplicationException($"Relatório de log não encontrado no servidor.");
+                }
+
+                _logger.LogInformation("Exportando o relatório de log do servidor.");
+                var fileBytes = File.ReadAllBytes(filePath);
+                base64 = Convert.ToBase64String(fileBytes);
+                _logger.LogInformation("Relatório de log exportado com sucesso do servidor.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[ExportReportLogUsersData] - Erro ao exportar o relatório de log: {ex.Message}");
+                throw ex;
+            }
+
+            return base64;
+
+        }
+
+        public async Task<bool> DeleteReportFileServer()
+        {
+            bool result = false;
+
+            try
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "output", "relatorioLogFila.xlsx");
+
+                if (!File.Exists(filePath))
+                {
+                    _logger.LogInformation("Tentativa de deletar arquivo inexistente: {FilePath}", filePath);
+                    throw new ApplicationException($"Tentativa de deletar arquivo inexistente: {filePath}");
+                }
+
+                File.Delete(filePath);
+                _logger.LogInformation("Arquivo deletado com sucesso: {FilePath}", filePath);
+
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"[DeleteReportFileServer] - Erro ao deletar o arquivo físico do servidor: {ex.Message}");
+                throw ex;
+            }
+
+            return result;
         }
 
         private FileContentResult GenerateFinalResultsArchive(List<ImportUser> results)

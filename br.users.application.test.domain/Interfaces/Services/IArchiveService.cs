@@ -11,5 +11,10 @@ namespace br.users.application.test.domain.Interfaces.Services
     public interface IArchiveService
     {
         Task<ResultSetImportArchive> ImportMassiveUsersData(IFormFile file);
+
+        Task<string> ExportReportLogUsersData();
+
+        Task<bool> DeleteReportFileServer();
+
     }
 }
