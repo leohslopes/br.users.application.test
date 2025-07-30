@@ -23,15 +23,15 @@ namespace br.users.application.test.application.Services
             _messageBusService = messageBusService;
         }
 
-       public async Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool? filterImg, bool? filterRecentUsers)
+       public async Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool? filterImg, bool? filterRecentUsers, string filterGender)
         {
             IEnumerable<Users> result;
 
             try
             {
-                if (!string.IsNullOrEmpty(filterName) || !string.IsNullOrEmpty(filterEmail) || filterImg.HasValue || filterRecentUsers.HasValue)
+                if (!string.IsNullOrEmpty(filterName) || !string.IsNullOrEmpty(filterEmail) || filterImg.HasValue || filterRecentUsers.HasValue || !string.IsNullOrEmpty(filterGender))
                 {
-                    result = await _userRepository.GetUsersWithFilters(filterName, filterEmail, filterImg, filterRecentUsers);
+                    result = await _userRepository.GetUsersWithFilters(filterName, filterEmail, filterImg, filterRecentUsers, filterGender);
                 }
                 else
                 {

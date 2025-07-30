@@ -33,6 +33,7 @@ namespace br.users.application.test.crossCutting.IoC
         {
             services.AddScoped<IUserCxRepository, UserCxRepository>();
             services.AddScoped<IArchiveRepository, ArchiveRepository>();
+            services.AddScoped<IDashboardRepository, DashboardRepository>();
         }
 
         private static void RegisterServices(IServiceCollection services)
@@ -40,6 +41,7 @@ namespace br.users.application.test.crossCutting.IoC
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IPasswordHasher<Users>, PasswordHasher<Users>>();
             services.AddScoped<IArchiveService, ArchiveService>();
+            services.AddScoped<IDashboardService, DashboardService>();
         }
 
         private static void RegisterMessages(IServiceCollection services) 

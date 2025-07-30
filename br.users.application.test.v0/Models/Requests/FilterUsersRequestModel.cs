@@ -12,5 +12,7 @@ namespace br.users.application.test.v0.Models.Requests
         public bool? FilterImg { get; set; }
 
         public bool? FilterRecentUsers { get; set; }
+
+        public string? FilterGender { get; set; }
     }
 }

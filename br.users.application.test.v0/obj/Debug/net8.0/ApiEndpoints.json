@@ -118,6 +118,26 @@
     ]
   },
   {
+    "ContainingType": "br.users.application.test.v0.Controllers.DashboardController",
+    "Method": "Get",
+    "RelativePath": "api/Dashboard/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "br.users.application.test.v0.Controllers.UserController",
     "Method": "Update",
     "RelativePath": "api/User/{userID}",
@@ -235,6 +255,11 @@
       {
         "Name": "FilterRecentUsers",
         "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterGender",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

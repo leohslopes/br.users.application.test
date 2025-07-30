@@ -1,7 +1,0 @@
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\bin\Debug\net8.0\CoverletSourceRootsMapping_br.users.application.test.unitTests
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.AssemblyReference.cache
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.AssemblyInfoInputs.cache
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.AssemblyInfo.cs
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.csproj.CoreCompileInputs.cache
-C:\DEV\br.users.application.test\br.users.application.test.unitTests\obj\Debug\net8.0\br.users.application.test.unitTests.sourcelink.json

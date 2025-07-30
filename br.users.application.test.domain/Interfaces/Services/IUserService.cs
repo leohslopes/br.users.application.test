@@ -10,7 +10,7 @@ namespace br.users.application.test.domain.Interfaces.Services
 {
     public interface IUserService
     {
-        Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool? filterImg, bool? filterRecentUsers);
+        Task<IEnumerable<Users>> GetItemsUserList(string filterName, string filterEmail, bool? filterImg, bool? filterRecentUsers, string filterGender);
 
         Task<bool> SaveNewResgisterUserData(string nameUser, string emailUser, int ageUser, string genderUser, string passwordUser, string officialNumberUser);
 

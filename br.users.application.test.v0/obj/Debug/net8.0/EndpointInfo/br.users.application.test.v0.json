@@ -211,6 +211,35 @@
         }
       }
     },
+    "/api/Dashboard/Get": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/User/filter-users": {
       "get": {
         "tags": [
@@ -243,6 +272,13 @@
             "in": "query",
             "schema": {
               "type": "boolean"
+            }
+          },
+          {
+            "name": "FilterGender",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
