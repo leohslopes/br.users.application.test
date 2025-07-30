@@ -25,5 +25,6 @@ O projeto foi desenvolvido nas seguintes tecnologias:
 ``` bash
 1- Executar o script do banco pelo caminho 'br.users.application.test\bdSql\scriptBdUserCx.sql' no MySQL Workbench.
 2- Resturar pacotes Nuget.
-3- Rodar a aplicação.
+3- Baixar o RabbitMQ, dar um start da fila criada no docker.
+4- Rodar a aplicação.
 ```
