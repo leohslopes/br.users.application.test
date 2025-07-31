@@ -10,5 +10,9 @@ namespace br.users.application.test.domain.Interfaces.Repositories
     public interface IDashboardRepository
     {
         Task<IEnumerable<ReportUsersDashboard>> GetTotalUsersByMonths();
+
+        Task<IEnumerable<ReportUserGender>> GetReportUserByGender();
+
+        Task<IEnumerable<ReportUserAllAges>> GetResultUserAges();
     }
 }

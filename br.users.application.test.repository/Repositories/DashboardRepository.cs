@@ -36,5 +36,23 @@ namespace br.users.application.test.repository.Repositories
 
             return result;
         }
+
+        public async Task<IEnumerable<ReportUserGender>> GetReportUserByGender()
+        {
+            string query = UserCxSQLStatements.GetReportUserByGender;
+
+            var result = await _dbMySQLSession.QueryAsync<ReportUserGender>(query);
+
+            return result;
+        }
+
+        public async Task<IEnumerable<ReportUserAllAges>> GetResultUserAges()
+        {
+            string query = UserCxSQLStatements.GetResultUserAges;
+
+            var result = await _dbMySQLSession.QueryAsync<ReportUserAllAges>(query);
+
+            return result;
+        }
     }
 }

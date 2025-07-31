@@ -119,8 +119,48 @@
   },
   {
     "ContainingType": "br.users.application.test.v0.Controllers.DashboardController",
-    "Method": "Get",
-    "RelativePath": "api/Dashboard/Get",
+    "Method": "GetDashboardAge",
+    "RelativePath": "api/Dashboard/GetDashboardAge",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "br.users.application.test.v0.Controllers.DashboardController",
+    "Method": "GetDashboardGender",
+    "RelativePath": "api/Dashboard/GetDashboardGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "br.users.application.test.v0.Controllers.DashboardController",
+    "Method": "GetDashboardTotal",
+    "RelativePath": "api/Dashboard/GetDashboardTotal",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

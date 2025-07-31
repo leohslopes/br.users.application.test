@@ -38,5 +38,39 @@ namespace br.users.application.test.application.Services
 
             return result;
         }
+
+        public async Task<IEnumerable<ReportUserGender>> GetReportTotalUserGenders()
+        {
+            IEnumerable<ReportUserGender> result;
+
+            try
+            {
+                result = await _dashboardRepository.GetReportUserByGender();
+            }
+            catch (ApplicationException ex)
+            {
+                _logger.LogError($"[GetReportTotalUserGenders] - Erro ao consultar o relatório de total de usuários por sexo no banco de dados: {ex.Message}");
+                throw ex;
+            }
+
+            return result;
+        }
+
+        public async Task<IEnumerable<ReportUserAllAges>> GetReportUserAllAges()
+        {
+            IEnumerable<ReportUserAllAges> result;
+
+            try
+            {
+                result = await _dashboardRepository.GetResultUserAges();
+            }
+            catch (ApplicationException ex)
+            {
+                _logger.LogError($"[GetReportUserAllAges] - Erro ao consultar o relatório das idades que mais se repetem no banco de dados: {ex.Message}");
+                throw ex;
+            }
+
+            return result;
+        }
     }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\DEV\\br.users.application.test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.domain\\entities\\dashboard\\reportuserallages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|solutionrelative:br.users.application.test.domain\\entities\\dashboard\\reportuserallages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.domain\\interfaces\\repositories\\idashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|solutionrelative:br.users.application.test.domain\\interfaces\\repositories\\idashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F4F48BA-AB23-461D-8413-24CBCF0B0A59}|br.users.application.test.repository\\br.users.application.test.repository.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.repository\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F4F48BA-AB23-461D-8413-24CBCF0B0A59}|br.users.application.test.repository\\br.users.application.test.repository.csproj|solutionrelative:br.users.application.test.repository\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.domain\\interfaces\\services\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|solutionrelative:br.users.application.test.domain\\interfaces\\services\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.application\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331AF932-E400-47CD-BE83-E80CE55226F7}|br.users.application.test.application\\br.users.application.test.application.csproj|solutionrelative:br.users.application.test.application\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "br.users.application.test.v0\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
+              "Title": "ReportUserAllAges.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Entities\\Dashboard\\ReportUserAllAges.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.domain\\Entities\\Dashboard\\ReportUserAllAges.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Entities\\Dashboard\\ReportUserAllAges.cs",
+              "RelativeToolTip": "br.users.application.test.domain\\Entities\\Dashboard\\ReportUserAllAges.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:24:26.443Z",
+              "WhenOpened": "2025-07-31T00:01:07.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IDashboardService.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Interfaces\\Services\\IDashboardService.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.domain\\Interfaces\\Services\\IDashboardService.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Interfaces\\Services\\IDashboardService.cs",
-              "RelativeToolTip": "br.users.application.test.domain\\Interfaces\\Services\\IDashboardService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAmAAAAAAAAAA==",
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.application\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.application\\Services\\DashboardService.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.application\\Services\\DashboardService.cs",
+              "RelativeToolTip": "br.users.application.test.application\\Services\\DashboardService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAqwD4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:10:24.2Z",
+              "WhenOpened": "2025-07-30T23:00:30.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IDashboardRepository.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Interfaces\\Repositories\\IDashboardRepository.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.domain\\Interfaces\\Repositories\\IDashboardRepository.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Interfaces\\Repositories\\IDashboardRepository.cs",
-              "RelativeToolTip": "br.users.application.test.domain\\Interfaces\\Repositories\\IDashboardRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Title": "DashboardRepository.cs",
+              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.repository\\Repositories\\DashboardRepository.cs",
+              "RelativeDocumentMoniker": "br.users.application.test.repository\\Repositories\\DashboardRepository.cs",
+              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.repository\\Repositories\\DashboardRepository.cs",
+              "RelativeToolTip": "br.users.application.test.repository\\Repositories\\DashboardRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwDcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:02:11.387Z",
+              "WhenOpened": "2025-07-30T22:57:03.819Z",
               "EditorCaption": ""
             }
           ]

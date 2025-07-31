@@ -21,15 +21,65 @@ namespace br.users.application.test.v0.Controllers
             _dashboardService = dashboardService;
         }
 
-        [HttpGet("Get"), MapToApiVersion("1.0")]
+        [HttpGet("GetDashboardTotal"), MapToApiVersion("1.0")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get(IOptions<ApiBehaviorOptions> apiBehaviorOptions)
+        public async Task<IActionResult> GetDashboardTotal(IOptions<ApiBehaviorOptions> apiBehaviorOptions)
         {
             try
             {
                 var resultAsync = await _dashboardService.GetReportTotalUsers();
 
                 return Ok(new StatusCode200TypedResponseModel<IEnumerable<ReportUsersDashboard>>()
+                {
+                    Success = resultAsync.Any(),
+                    Data = resultAsync
+                });
+            }
+            catch (Exception ex)
+            {
+                var rt = new StatusCode200StandardResponseModel
+                {
+                    Success = false
+                };
+                rt.Errors.Add(new KeyValuePair<string, string>("error", ex.Message));
+                return Ok(rt);
+            }
+        }
+
+        [HttpGet("GetDashboardGender"), MapToApiVersion("1.0")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetDashboardGender(IOptions<ApiBehaviorOptions> apiBehaviorOptions)
+        {
+            try
+            {
+                var resultAsync = await _dashboardService.GetReportTotalUserGenders();
+
+                return Ok(new StatusCode200TypedResponseModel<IEnumerable<ReportUserGender>>()
+                {
+                    Success = resultAsync.Any(),
+                    Data = resultAsync
+                });
+            }
+            catch (Exception ex)
+            {
+                var rt = new StatusCode200StandardResponseModel
+                {
+                    Success = false
+                };
+                rt.Errors.Add(new KeyValuePair<string, string>("error", ex.Message));
+                return Ok(rt);
+            }
+        }
+
+        [HttpGet("GetDashboardAge"), MapToApiVersion("1.0")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetDashboardAge(IOptions<ApiBehaviorOptions> apiBehaviorOptions)
+        {
+            try
+            {
+                var resultAsync = await _dashboardService.GetReportUserAllAges();
+
+                return Ok(new StatusCode200TypedResponseModel<IEnumerable<ReportUserAllAges>>()
                 {
                     Success = resultAsync.Any(),
                     Data = resultAsync

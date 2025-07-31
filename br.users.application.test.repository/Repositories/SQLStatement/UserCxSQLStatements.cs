@@ -100,5 +100,15 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                               "ON DATE_FORMAT(u.date_alter, '%Y-%m') = m.mes_referencia " +
                                                               "GROUP BY m.ano, m.num_mes " +
                                                               "ORDER BY m.ano, m.num_mes";
+
+        public static readonly string GetReportUserByGender = "SELECT CASE gender_user " +
+                                                              "WHEN 'M' THEN 'Masculino' " +
+                                                              "WHEN 'F' THEN 'Feminino' " +
+                                                              "END AS GenderName, " +
+                                                              "COUNT(*) AS CountGender " +
+                                                              "FROM users_cx " +
+                                                              "GROUP BY gender_user";
+
+        public static readonly string GetResultUserAges = "SELECT age_user AS AllAge, COUNT(1) AS CountAges FROM users_cx GROUP BY age_user";
     }
 }
