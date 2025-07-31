@@ -54,5 +54,14 @@ namespace br.users.application.test.repository.Repositories
 
             return result;
         }
+
+        public async Task<IEnumerable<ReportUserPicture>> GetResultUserPictures()
+        {
+            string query = UserCxSQLStatements.GetResultUserPictures;
+
+            var result = await _dbMySQLSession.QueryAsync<ReportUserPicture>(query);
+
+            return result;
+        }
     }
 }

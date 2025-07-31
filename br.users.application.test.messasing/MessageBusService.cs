@@ -26,10 +26,10 @@ namespace br.users.application.test.messasing
             {
                 var factory = new ConnectionFactory()
                 {
-                    HostName = _configuration["RabbitMQ:HostName"] ?? "localhost",
-                    Port = 5672,
-                    UserName = "guest",
-                    Password = "guest"
+                    HostName = _configuration["RabbitMQ:HostName"],
+                    Port = int.Parse(_configuration["RabbitMQ:Port"]),
+                    UserName = _configuration["RabbitMQ:UserName"],
+                    Password = _configuration["RabbitMQ:Password"]
                 };
 
                 using var connection = factory.CreateConnection();

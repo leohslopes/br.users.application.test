@@ -95,5 +95,30 @@ namespace br.users.application.test.v0.Controllers
                 return Ok(rt);
             }
         }
+
+        [HttpGet("GetDashboardPicture"), MapToApiVersion("1.0")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetDashboardPicture(IOptions<ApiBehaviorOptions> apiBehaviorOptions)
+        {
+            try
+            {
+                var resultAsync = await _dashboardService.GetReportUserPictures();
+
+                return Ok(new StatusCode200TypedResponseModel<IEnumerable<ReportUserPicture>>()
+                {
+                    Success = resultAsync.Any(),
+                    Data = resultAsync
+                });
+            }
+            catch (Exception ex)
+            {
+                var rt = new StatusCode200StandardResponseModel
+                {
+                    Success = false
+                };
+                rt.Errors.Add(new KeyValuePair<string, string>("error", ex.Message));
+                return Ok(rt);
+            }
+        }
     }
 }

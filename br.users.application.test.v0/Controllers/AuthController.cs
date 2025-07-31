@@ -47,11 +47,13 @@ namespace br.users.application.test.v0.Controllers
                 if (resultAuth == PasswordVerificationResult.Failed) return Unauthorized("Credenciais inválidas.");
 
                 var token = GenerateJwtToken(resultByEmail);
-                
-                return Ok(new StatusCode200TypedResponseModel<string>()
+                var resp = new ResponseUserSession { Token = token, User = resultByEmail };
+
+
+                return Ok(new StatusCode200TypedResponseModel<ResponseUserSession>()
                 {
                     Success = true,
-                    Data = token
+                    Data = resp
                 });
             }
             catch (Exception ex)

@@ -110,5 +110,13 @@ namespace br.users.application.test.repository.Repositories.SQLStatement
                                                               "GROUP BY gender_user";
 
         public static readonly string GetResultUserAges = "SELECT age_user AS AllAge, COUNT(1) AS CountAges FROM users_cx GROUP BY age_user";
+
+        public static readonly string GetResultUserPictures = "SELECT CASE " +
+                                                              "WHEN picture_user IS NOT NULL AND picture_user != '' THEN 'Usuário(s) com foto' " +
+                                                              "ELSE 'Usuário(s) sem foto' " +
+                                                              "END AS ResultPicture, " +
+                                                              "COUNT(*) AS CountPictures " +
+                                                              "FROM users_cx " +
+                                                              "GROUP BY ResultPicture";
     }
 }

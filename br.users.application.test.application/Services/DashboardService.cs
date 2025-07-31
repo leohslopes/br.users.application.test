@@ -72,5 +72,22 @@ namespace br.users.application.test.application.Services
 
             return result;
         }
+
+        public async Task<IEnumerable<ReportUserPicture>> GetReportUserPictures()
+        {
+            IEnumerable<ReportUserPicture> result;
+
+            try
+            {
+                result = await _dashboardRepository.GetResultUserPictures();
+            }
+            catch (ApplicationException ex)
+            {
+                _logger.LogError($"[GetReportUserPictures] - Erro ao consultar o relatório de fotos no banco de dados: {ex.Message}");
+                throw ex;
+            }
+
+            return result;
+        }
     }
 }

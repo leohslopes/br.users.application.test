@@ -1,6 +1,7 @@
 ﻿using br.users.application.test.domain.Entities;
 using br.users.application.test.domain.Entities.Messasing;
 using ClosedXML.Excel;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -18,6 +19,7 @@ namespace br.users.application.test.messasing
 {
     public class WorkMessage : BackgroundService
     {
+        private readonly IConfiguration _configuration;
         private readonly ILogger<WorkMessage> _logger;
         private IConnection _connection;
         private IModel _channel;
@@ -25,15 +27,17 @@ namespace br.users.application.test.messasing
         private readonly List<UserDTO> dtos = new List<UserDTO>();
         private readonly string _excelOutputPath = Path.Combine(Directory.GetCurrentDirectory(), "output", "relatorioLogFila.xlsx");
 
-        public WorkMessage(ILogger<WorkMessage> logger, IOptions<EmailSettings> emailOptions)
+        public WorkMessage(IConfiguration configuration,ILogger<WorkMessage> logger, IOptions<EmailSettings> emailOptions)
         {
+            _configuration = configuration;
             _logger = logger;
             _emailSettings = emailOptions.Value;
 
-            var factory = new ConnectionFactory() { HostName = "localhost",
-                Port = 5672,
-                UserName = "guest",
-                Password = "guest"
+            var factory = new ConnectionFactory() {
+                HostName = _configuration["RabbitMQ:HostName"],
+                Port = int.Parse(_configuration["RabbitMQ:Port"]),
+                UserName = _configuration["RabbitMQ:UserName"],
+                Password = _configuration["RabbitMQ:Password"]
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
@@ -64,7 +68,7 @@ namespace br.users.application.test.messasing
                     await GenerateReportLogAsync();
                 }
 
-                //await SendEmailAsync(user.UserName, subject, content);
+                await SendEmailAsync("leohslopes15@gmail.com", subject, content);
             };
 
             _channel.BasicConsume(queue: "user_created", autoAck: true, consumer: consumer);
@@ -119,8 +123,22 @@ namespace br.users.application.test.messasing
             emailMessage.Subject = subject;
 
             emailMessage.Body = new MimeKit.TextPart("plain") { Text = body };
+            using var client = new MailKit.Net.Smtp.SmtpClient
+            {
+                CheckCertificateRevocation = false
+            };
 
-            using var client = new MailKit.Net.Smtp.SmtpClient();
+            var builder = new MimeKit.BodyBuilder
+            {
+                TextBody = body
+            };
+
+            // Adiciona o anexo (relatório Excel gerado)
+            if (File.Exists(_excelOutputPath))
+            {
+                builder.Attachments.Add(_excelOutputPath);
+            }
+
 
             try
             {

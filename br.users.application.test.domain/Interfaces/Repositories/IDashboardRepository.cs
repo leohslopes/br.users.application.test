@@ -14,5 +14,7 @@ namespace br.users.application.test.domain.Interfaces.Repositories
         Task<IEnumerable<ReportUserGender>> GetReportUserByGender();
 
         Task<IEnumerable<ReportUserAllAges>> GetResultUserAges();
+
+        Task<IEnumerable<ReportUserPicture>> GetResultUserPictures();
     }
 }
