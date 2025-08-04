@@ -68,7 +68,7 @@ namespace br.users.application.test.messasing
                     await GenerateReportLogAsync();
                 }
 
-                await SendEmailAsync("leohslopes15@gmail.com", subject, content);
+                await SendEmailAsync(_configuration["AdminEmail"].ToString(), subject, content);
             };
 
             _channel.BasicConsume(queue: "user_created", autoAck: true, consumer: consumer);
@@ -125,7 +125,7 @@ namespace br.users.application.test.messasing
             emailMessage.Body = new MimeKit.TextPart("plain") { Text = body };
             using var client = new MailKit.Net.Smtp.SmtpClient
             {
-                CheckCertificateRevocation = false
+                CheckCertificateRevocation = Convert.ToBoolean(_configuration["CheckCertificateRevocation"])
             };
 
             var builder = new MimeKit.BodyBuilder

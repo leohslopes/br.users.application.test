@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\DEV\\br.users.application.test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}|br.users.application.test.messasing\\br.users.application.test.messasing.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.messasing\\messagebusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}|br.users.application.test.messasing\\br.users.application.test.messasing.csproj|solutionrelative:br.users.application.test.messasing\\messagebusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}|br.users.application.test.messasing\\br.users.application.test.messasing.csproj|solutionrelative:br.users.application.test.messasing\\workmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\archivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\archivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.domain\\entities\\usercx\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0993AB9-B5F3-4038-82A7-065F5443DC4F}|br.users.application.test.domain\\br.users.application.test.domain.csproj|solutionrelative:br.users.application.test.domain\\entities\\usercx\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.v0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B1C6EDA-348E-4243-B5FD-4D11FB8262AF}|br.users.application.test.v0\\br.users.application.test.v0.csproj|solutionrelative:br.users.application.test.v0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}|br.users.application.test.messasing\\br.users.application.test.messasing.csproj|c:\\dev\\br.users.application.test\\br.users.application.test.messasing\\messagebusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80DCFB6-F70E-4350-81E7-1ED2FE2D82C7}|br.users.application.test.messasing\\br.users.application.test.messasing.csproj|solutionrelative:br.users.application.test.messasing\\messagebusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,46 +42,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MessageBusService.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.messasing\\MessageBusService.cs",
               "RelativeDocumentMoniker": "br.users.application.test.messasing\\MessageBusService.cs",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.messasing\\MessageBusService.cs",
               "RelativeToolTip": "br.users.application.test.messasing\\MessageBusService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wA8AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T16:13:52.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\appsettings.json",
               "RelativeDocumentMoniker": "br.users.application.test.v0\\appsettings.json",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\appsettings.json",
               "RelativeToolTip": "br.users.application.test.v0\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-31T15:31:56.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "WorkMessage.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.messasing\\WorkMessage.cs",
               "RelativeDocumentMoniker": "br.users.application.test.messasing\\WorkMessage.cs",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.messasing\\WorkMessage.cs",
               "RelativeToolTip": "br.users.application.test.messasing\\WorkMessage.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAqwB8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T15:27:39.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.domain\\Entities\\UserCx\\Users.cs",
               "RelativeDocumentMoniker": "br.users.application.test.domain\\Entities\\UserCx\\Users.cs",
@@ -98,39 +94,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\AuthController.cs",
               "RelativeToolTip": "br.users.application.test.v0\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwCkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAA1wCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T14:45:30.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ArchiveController.cs",
-              "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\ArchiveController.cs",
-              "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\ArchiveController.cs",
-              "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\ArchiveController.cs",
-              "RelativeToolTip": "br.users.application.test.v0\\Controllers\\ArchiveController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwB8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T14:45:25.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "br.users.application.test.v0\\Controllers\\DashboardController.cs",
               "ToolTip": "C:\\DEV\\br.users.application.test\\br.users.application.test.v0\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "br.users.application.test.v0\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwG4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAG4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T13:44:16.939Z",
               "EditorCaption": ""
